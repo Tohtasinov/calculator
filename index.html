@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="calculator">
+        <div class="show">
+          <div class="states">
+            <div id="timeContainer">
+              <span id="currentTime"></span>
+            </div>
+            <div class="charger"></div>
+          </div>
+          <h1 id="result" class="result">0</h1>
+        </div>
+        <div class="inputs">
+          <button class="btn btn-light" onclick="clean()" id="btnCleaner">
+            AC
+          </button>
+          <button class="btn btn-light">+-</button>
+          <button
+            class="btn btn-light"
+            onclick="setOperator('%')"
+            id="btnProsent"
+          >
+            %
+          </button>
+          <button
+            class="btn btn-yellow"
+            onclick="setOperator('/')"
+            id="btnDivision"
+          >
+            /
+          </button>
+          <button class="btn btn-dark" onclick="setNumber('7')" id="btn7">
+            7
+          </button>
+          <button class="btn btn-dark" onclick="setNumber('8')" id="btn8">
+            8
+          </button>
+          <button class="btn btn-dark" onclick="setNumber('9')" id="btn9">
+            9
+          </button>
+          <button
+            class="btn btn-yellow"
+            onclick="setOperator('*')"
+            id="btnMultiplate"
+          >
+            X
+          </button>
+          <button class="btn btn-dark" onclick="setNumber('4')" id="btn4">
+            4
+          </button>
+          <button class="btn btn-dark" onclick="setNumber('5')" id="btn5">
+            5
+          </button>
+          <button class="btn btn-dark" onclick="setNumber('6')" id="btn6">
+            6
+          </button>
+          <button
+            class="btn btn-yellow"
+            onclick="setOperator('-')"
+            id="btnMinus"
+          >
+            -
+          </button>
+          <button class="btn btn-dark" onclick="setNumber('1')" id="btn1">
+            1
+          </button>
+          <button class="btn btn-dark" onclick="setNumber('2')" id="btn2">
+            2
+          </button>
+          <button class="btn btn-dark" onclick="setNumber('3')" id="btn3">
+            3
+          </button>
+          <button
+            class="btn btn-yellow"
+            onclick="setOperator('+')"
+            id="btnPlus"
+          >
+            +
+          </button>
+
+          <button class="btn btn-dark zero" onclick="setNumber('0')" id="btn0">
+            0
+          </button>
+          <button class="btn btn-dark" onclick="setNumber('.')" id="btnSpot">
+            ,
+          </button>
+          <button class="btn btn-yellow" onclick="resulting()" id="btnResult">
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
